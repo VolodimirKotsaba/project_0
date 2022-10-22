@@ -1,12 +1,60 @@
 body {
-  width: 100%;
-  max-width: 1000px;
-  background-color: #d4d4d4;
-  margin: 0 auto;
-  font-size: 100px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: gray;
+  background-color: white;
 }
 
-.centr {
-  margin-top: 100px;
-  text-align: center;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+  border-bottom: 1px solid #515369;
+  align-items: center;
+}
+
+.nav {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav__link {
+  color: white;
+  opacity: 0.75;
+  margin-left: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav__link:hover {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+}
+.nav__link:first-child {
+  margin-left: 0;
+}
+
+.intro {
+  height: 750px;
+  background: #31344e url("../img/introbg.jpg") center no-repeat;
 }
